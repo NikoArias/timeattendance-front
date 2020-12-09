@@ -39,9 +39,9 @@ class RegisterContainer extends Component{
   }
 
   onSuccess(responseData){
-    alert(responseData.message);
-    this.props.History.push('/dashboard');
-  }
+    localStorage.setItem('profile', JSON.stringify(responseData));
+    this.props.history.push('/dashboard');
+}
 
   onFailure(responseData){
     alert(responseData.message);

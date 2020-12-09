@@ -16,9 +16,5 @@ export function postRegister (postData, onSuccess, onFailure){
   userArrayString = JSON.stringify(userArray);
 
   localStorage.setItem(REGISTER_KEY, userArrayString);
-
-  const responseData = {
-    message:"registration was a success!!"
-  }
-  onSuccess(responseData);
+  onSuccess(postData);
 }

@@ -18,6 +18,8 @@ class LoginContainer extends Component {
   }
 
   onSuccess(responseData){
+    console.log(responseData);
+    localStorage.setItem('profile', JSON.stringify(responseData));
     this.props.history.push('/dashboard');
   }
 

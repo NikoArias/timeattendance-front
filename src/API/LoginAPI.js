@@ -16,11 +16,7 @@ export function postLogin (postData, onSuccesCallBack, onFailureCallBack) {
     if(userObj.email === postData.email){
       console.log('email match');
       if (userObj.password === postData.password){
-        const responseData = {
-          message: 'You got it tho',
-        }
-
-        onSuccesCallBack(responseData);
+        onSuccesCallBack(userObj);
         return;
       }
     }
