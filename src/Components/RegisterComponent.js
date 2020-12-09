@@ -9,7 +9,7 @@ import AnonNavBar from "./AnonNavbar.js"
 
 
 function RegisterComponent (props){
-  const { username, password, error, onUsernameChange, onPasswordChange, onClick} = props;
+  const { username, password, error, onUsernameChange, onPasswordChange, onClick, fullname, onFullNameChange} = props;
       return (
           <>
           <AnonNavBar/>
@@ -30,6 +30,14 @@ function RegisterComponent (props){
                        onChange={onUsernameChange}
                        value={username}
                        placeholder="username" />
+              </Col>
+              <Col>
+              <input name="fullname"
+                     type="text"
+                     id="fullname"
+                     onChange={onFullNameChange}
+                     value={fullname}
+                     placeholder="fullname" />
               </Col>
               <Col>
               <input name="password"

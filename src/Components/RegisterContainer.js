@@ -7,6 +7,7 @@ class RegisterContainer extends Component{
     super(props);
     this.state ={
       username: "",
+      fullname: '',
       password: "",
       error: "",
     };
@@ -15,6 +16,7 @@ class RegisterContainer extends Component{
     this.onClick = this.onClick.bind(this);
     this.onSuccess = this.onSuccess.bind(this);
     this.onFailure = this.onFailure.bind(this);
+    this.onFullNameChange = this.onFullNameChange.bind(this);
 
   }
 
@@ -24,7 +26,11 @@ class RegisterContainer extends Component{
       });
   }
 
-
+  onFullNameChange(e){
+    this.setState({
+      fullname: e.target.value,
+    });
+  }
 
   onPasswordChange(event) {
       this.setState({
@@ -34,6 +40,7 @@ class RegisterContainer extends Component{
 
   onSuccess(responseData){
     alert(responseData.message);
+    this.props.History.push('/dashboard');
   }
 
   onFailure(responseData){
@@ -41,11 +48,12 @@ class RegisterContainer extends Component{
   }
 
   onClick(e){
-    const {username, password} = this.state
+    const {username, fullname, password} = this.state
     const shortid = require('shortid');
 
     const postData = {
       email:username,
+      fullname:fullname,
       password: password,
       id: shortid.generate(),
     };
@@ -54,14 +62,16 @@ class RegisterContainer extends Component{
 
 
 render() {
-      const { username, password, error } = this.state;
+      const { username, fullname, password, error } = this.state;
       return (
         <>
         <RegisterComponent
           username={username}
+          fullname={fullname}
           password={password}
           onUsernameChange={this.onUsernameChange}
           onPasswordChange={this.onPasswordChange}
+          onFullNameChange={this.onFullNameChange}
           onClick={this.onClick}
           error={error}/>
         </>

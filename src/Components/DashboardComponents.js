@@ -26,7 +26,7 @@ function DashboardComponents (props){
     <Card.Text>
     To schedule your arrival and departure time press the link below.
     </Card.Text>
-    <Button variant="primary">Click Here</Button>
+    <Button variant="primary" href='/addtime'>Click Here</Button>
   </Card.Body>
   <Card.Footer className="text-muted">TimeAttendance App</Card.Footer>
 </Card>
