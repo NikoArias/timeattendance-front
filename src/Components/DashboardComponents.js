@@ -38,7 +38,7 @@ function DashboardComponents (props){
 <br />
 
 <Card className="text-center">
-<Card.Header>Featured</Card.Header>
+<Card.Header>History</Card.Header>
 <Card.Body>
 <Card.Title>See your History</Card.Title>
 <Card.Text>

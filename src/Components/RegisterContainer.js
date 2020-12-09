@@ -42,9 +42,12 @@ class RegisterContainer extends Component{
 
   onClick(e){
     const {username, password} = this.state
+    const shortid = require('shortid');
+
     const postData = {
       email:username,
       password: password,
+      id: shortid.generate(),
     };
     postRegister(postData, this.onSuccess, this.onFailure)
 }
