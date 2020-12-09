@@ -11,7 +11,7 @@ import Button from 'react-bootstrap/Button';
 
 function AddTimeComponent (props){
   const{
-     arrhour, leahour, date
+     arrhour, leahour, date, onArrHourChange, onLeaHourChange, onDateChange, onClick
   }=props;
   return(
     <>
@@ -26,16 +26,18 @@ function AddTimeComponent (props){
       <Row>
 
        <Col>
-      <Form.Control placeholder="Arrive Hour" value={arrhour} />
+      <Form.Control placeholder="Arrive Hour" value={arrhour} onChange={onArrHourChange}/>
        </Col>
        <Col>
-      <Form.Control placeholder="Leave Hour" value={leahour}/>
+      <Form.Control placeholder="Leave Hour" value={leahour} onChange={onLeaHourChange}/>
        </Col>
        <Col>
-         <Form.Control placeholder="Date" value={date} />
+         <Form.Control placeholder="Date" value={date} onChange={onDateChange}/>
        </Col>
       </Row>
       </Form>
+
+      <Button variant='primary' onClick={onClick} type='Button'> Submit </Button>
 
       <br />
       <br />
