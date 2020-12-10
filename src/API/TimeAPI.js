@@ -18,3 +18,17 @@ export function postTimeCreate (postData, onSuccess, onFailure){
   localStorage.setItem(TIME_KEY, timeArrayString);
   onSuccess(postData);
 }
+
+export function getTime(userId, onSuccessCallBack, onFailureCallBack){
+  let textData = localStorage.getItem(TIME_KEY);
+
+    if (textData === null){
+      const arr = [];
+      const arrString = JSON.stringify(arr);
+      localStorage.setItem(TIME_KEY, arrString);
+      textData = arrString;
+    }
+
+    const timeArray = JSON.parse(textData);
+    onSuccessCallBack(timeArray);
+}

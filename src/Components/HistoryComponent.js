@@ -5,6 +5,7 @@ import UserNavbar from './UserNavbar';
 import Table from 'react-bootstrap/Table'
 
 function HistoryComponent (props){
+  const{data}=props; 
   return(
     <>
 

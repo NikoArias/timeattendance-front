@@ -44,7 +44,7 @@ function DashboardComponents (props){
 <Card.Text>
   To see your working hours and scheduled schedules enter the link below.
 </Card.Text>
-<Button variant="primary" href='./'>Click Here</Button>
+<Button variant="primary" href='./history'>Click Here</Button>
 </Card.Body>
 <Card.Footer className="text-muted">TimeAttendance App</Card.Footer>
 </Card>
