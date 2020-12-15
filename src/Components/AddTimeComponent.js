@@ -8,6 +8,8 @@ import Row from 'react-bootstrap/Row';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 function AddTimeComponent (props){
   const{
@@ -17,6 +19,13 @@ function AddTimeComponent (props){
     <>
 
     <UserNavbar/>
+
+    <Breadcrumb>
+<Breadcrumb.Item href='/dashboard'>Dashboard</Breadcrumb.Item>
+<Breadcrumb.Item active> AddTime</Breadcrumb.Item>
+<Breadcrumb.Item href='history'>History</Breadcrumb.Item>
+</Breadcrumb>
+      <Container>
 
     <br />
     <br />
@@ -84,15 +93,7 @@ the card's content.
 </Card>
 </Col>
 <Col>
-<Card style={{ width: '30rem' }}bg='danger'>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-  </Card.Body>
-</Card>
+
 </Col>
 </Row>
 
@@ -104,7 +105,7 @@ the card's content.
   <Card.Img variant="bottom" src="img/Banner.png" />
 </Card>
 
-
+  </Container>
     </>
 
   )

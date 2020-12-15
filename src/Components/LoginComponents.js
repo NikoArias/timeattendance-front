@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 
 
@@ -18,6 +19,14 @@ function LoginComponents(props)  {
        <>
 
           <AnonNavbar/>
+
+          <Breadcrumb>
+     <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
+     <Breadcrumb.Item active>
+       Login
+     </Breadcrumb.Item>
+     <Breadcrumb.Item href='/register'>Register</Breadcrumb.Item>
+   </Breadcrumb>
 
           <br />
           <br />

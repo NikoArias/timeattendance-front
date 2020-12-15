@@ -4,6 +4,7 @@ import AnonNavbar from './AnonNavbar.js';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 function IndexComponents(props)  {
      return(
@@ -11,8 +12,14 @@ function IndexComponents(props)  {
 
        <AnonNavbar/>
 
-       <br />
-       <br />
+       <Breadcrumb>
+  <Breadcrumb.Item active>Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="/login">
+    Login
+  </Breadcrumb.Item>
+  <Breadcrumb.Item href='/register'>Register</Breadcrumb.Item>
+</Breadcrumb>
+
 
        <Carousel>
 

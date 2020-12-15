@@ -20,6 +20,7 @@ export function postTimeCreate (postData, onSuccess, onFailure){
 }
 
 export function getTime(userId, onSuccessCallBack, onFailureCallBack){
+  console.log('userId=',userId)
   let textData = localStorage.getItem(TIME_KEY);
 
     if (textData === null){
@@ -30,5 +31,12 @@ export function getTime(userId, onSuccessCallBack, onFailureCallBack){
     }
 
     const timeArray = JSON.parse(textData);
-    onSuccessCallBack(timeArray);
+    let newTimeArray = [];
+    for (let datum of timeArray){
+      if (userId === datum.userId){
+        newTimeArray.push(datum);
+      }
+    }
+    onSuccessCallBack(newTimeArray);
+
 }

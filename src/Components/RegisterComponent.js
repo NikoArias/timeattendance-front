@@ -7,6 +7,7 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import AnonNavBar from "./AnonNavbar.js"
 import Card from "react-bootstrap/Card";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 
 
@@ -15,6 +16,15 @@ function RegisterComponent (props){
       return (
           <>
           <AnonNavBar/>
+
+          <Breadcrumb>
+     <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
+     <Breadcrumb.Item href='/login'>
+       Login
+     </Breadcrumb.Item>
+     <Breadcrumb.Item active>Register</Breadcrumb.Item>
+   </Breadcrumb>
+
           <Container>
             <Row>
               <Col>

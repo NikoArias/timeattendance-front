@@ -60,6 +60,8 @@ class AddTimeContainer extends Component {
 
   onSuccesCallBack(responseData){
     console.log(responseData);
+    alert('Time Was Added');
+    this.props.history.push('/history');
   }
 
   onFailureCallBack(responseData){

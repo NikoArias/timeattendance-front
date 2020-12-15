@@ -5,13 +5,22 @@ import DashboardContainer from './DashboardContainer';
 import UserNavbar from './UserNavbar';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 function DashboardComponents (props){
   return(
     <>
 
-    <UserNavbar
-    />
+    <UserNavbar/>
+
+              <Breadcrumb>
+         <Breadcrumb.Item active>Dashboard</Breadcrumb.Item>
+         <Breadcrumb.Item href='/addtime'> AddTime</Breadcrumb.Item>
+         <Breadcrumb.Item href='history'>History</Breadcrumb.Item>
+       </Breadcrumb>
+
+
+
 
 
     <br />
