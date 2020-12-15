@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
-
+import Card from 'react-bootstrap/Card';
 
 function AddTimeComponent (props){
   const{
@@ -37,23 +37,73 @@ function AddTimeComponent (props){
       </Row>
       </Form>
 
-      <Button variant='primary' onClick={onClick} type='Button'> Submit </Button>
+      <br />
+      <br />
+
+      <Row>
+      <Col>
+      </Col>
+      <Col>
+      <Button variant='primary' onClick={onClick} type='Button' size='lg' block> Submit </Button>
+      </Col>
+      <Col>
+      </Col>
+      </Row>
+
+
+
+
 
       <br />
       <br />
 
-      <Jumbotron>
-  <h1>Hello, world!</h1>
-  <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
-  </p>
-  <p>
-    <Button variant="primary">Learn more</Button>
-  </p>
-</Jumbotron>
+<Row>
+<Col>
+<Card style={{ width: '30rem' }} bg='info'>
 
-        <p> Go back <Link to="/"> Logout Here</Link></p>
+<Card.Body>
+<Card.Title>Card Title</Card.Title>
+<Card.Text>
+Some quick example text to build on the card title and make up the bulk of
+the card's content.
+</Card.Text>
+
+</Card.Body>
+</Card>
+
+</Col>
+<Col>
+<Card style={{ width: '30rem' }} bg='warning'>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+  </Card.Body>
+</Card>
+</Col>
+<Col>
+<Card style={{ width: '30rem' }}bg='danger'>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+  </Card.Body>
+</Card>
+</Col>
+</Row>
+
+<br />
+<br />
+
+
+<Card>
+  <Card.Img variant="bottom" src="img/Banner.png" />
+</Card>
+
 
     </>
 

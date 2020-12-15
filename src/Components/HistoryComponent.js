@@ -2,10 +2,12 @@ import React, {Component} from "react";
 import { Link } from "react-router-dom";
 
 import UserNavbar from './UserNavbar';
-import Table from 'react-bootstrap/Table'
+import Table from 'react-bootstrap/Table';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function HistoryComponent (props){
-  const{data}=props; 
+  const{data}=props;
   return(
     <>
 
@@ -13,15 +15,11 @@ function HistoryComponent (props){
 
     <br />
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
 
+    <Row>
+    <Col>
+    </Col>
+    <Col>
     <Table striped bordered hover variant="dark">
       <thead>
         <tr>
@@ -46,9 +44,45 @@ function HistoryComponent (props){
           <td>6:00 AM / 6:00 PM</td>
           <td>09/11/2020</td>
         </tr>
+        <tr>
+          <td>Nick</td>
+          <td>6:00 AM / 6:00 PM </td>
+          <td>09/11/2020</td>
+        </tr>
+        <tr>
+          <td>Sebastian</td>
+          <td>6:00 AM / 6:00 PM</td>
+          <td>09/11/2020</td>
+        </tr>
+        <tr>
+          <td>Luis</td>
+          <td>6:00 AM / 6:00 PM</td>
+          <td>09/11/2020</td>
+        </tr>
+        <tr>
+          <td>Nick</td>
+          <td>6:00 AM / 6:00 PM </td>
+          <td>09/11/2020</td>
+        </tr>
+        <tr>
+          <td>Sebastian</td>
+          <td>6:00 AM / 6:00 PM</td>
+          <td>09/11/2020</td>
+        </tr>
+        <tr>
+          <td>Luis</td>
+          <td>6:00 AM / 6:00 PM</td>
+          <td>09/11/2020</td>
+        </tr>
       </tbody>
     </Table>
-                <p>Go back <Link to="/">Logout Here</Link></p>
+    </Col>
+
+    <Col>
+    </Col>
+
+    </Row>
+
 
     </>
 

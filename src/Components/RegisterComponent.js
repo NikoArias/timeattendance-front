@@ -6,6 +6,8 @@ import Col from "react-bootstrap/Col";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import AnonNavBar from "./AnonNavbar.js"
+import Card from "react-bootstrap/Card";
+
 
 
 function RegisterComponent (props){
@@ -57,6 +59,24 @@ function RegisterComponent (props){
               </Col>
             </Row>
           </Container>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <Card className="bg-dark text-white">
+
+            <Card.Img src="img/Banner3.png" alt="Card image" />
+            <Card.ImgOverlay>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.
+            </Card.Text>
+            <Card.Text>Last updated 3 mins ago</Card.Text>
+            </Card.ImgOverlay>
+            </Card>
           </>
       );
   }
