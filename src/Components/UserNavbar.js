@@ -9,7 +9,7 @@ function UserNavbar(props){
   return(
 
            <Navbar bg='dark' variant='primary'>
-           <Navbar.Brand href='#/'>
+           <Navbar.Brand href='/'>
            <img src='./img/LogoTA.png'
            width = '100' height= '100'
            />&nbsp;

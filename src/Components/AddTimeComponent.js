@@ -23,7 +23,6 @@ function AddTimeComponent (props){
     <Breadcrumb>
 <Breadcrumb.Item href='/dashboard'>Dashboard</Breadcrumb.Item>
 <Breadcrumb.Item active> AddTime</Breadcrumb.Item>
-<Breadcrumb.Item href='history'>History</Breadcrumb.Item>
 </Breadcrumb>
       <Container>
 
@@ -54,6 +53,10 @@ function AddTimeComponent (props){
       </Col>
       <Col>
       <Button variant='primary' onClick={onClick} type='Button' size='lg' block> Submit </Button>
+      <br />
+
+      <Button variant='secondary' href='/dashboard' type='Button' size='lg' block> Go Back </Button>
+
       </Col>
       <Col>
       </Col>
@@ -71,10 +74,9 @@ function AddTimeComponent (props){
 <Card style={{ width: '30rem' }} bg='info'>
 
 <Card.Body>
-<Card.Title>Card Title</Card.Title>
+<Card.Title>Be careful</Card.Title>
 <Card.Text>
-Some quick example text to build on the card title and make up the bulk of
-the card's content.
+remember to put the exact time of your arrival in am / pm.
 </Card.Text>
 
 </Card.Body>
@@ -84,10 +86,9 @@ the card's content.
 <Col>
 <Card style={{ width: '30rem' }} bg='warning'>
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
+    <Card.Title>Be careful</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      Remember to use the assigned format 00/00/00 for the date.
     </Card.Text>
   </Card.Body>
 </Card>

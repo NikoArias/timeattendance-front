@@ -19,9 +19,6 @@ function RegisterComponent (props){
 
           <Breadcrumb>
      <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
-     <Breadcrumb.Item href='/login'>
-       Login
-     </Breadcrumb.Item>
      <Breadcrumb.Item active>Register</Breadcrumb.Item>
    </Breadcrumb>
 
@@ -79,12 +76,11 @@ function RegisterComponent (props){
 
             <Card.Img src="img/Banner3.png" alt="Card image" />
             <Card.ImgOverlay>
-            <Card.Title>Card title</Card.Title>
+            <Card.Title>Remember your username</Card.Title>
             <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
+            Keep in mind that your user is unique, do not give it to anyone, you could lose your saved progress and the main reason for this app is to help you keep your best work times in order.
             </Card.Text>
-            <Card.Text>Last updated 3 mins ago</Card.Text>
+
             </Card.ImgOverlay>
             </Card>
           </>

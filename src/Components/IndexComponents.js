@@ -14,10 +14,6 @@ function IndexComponents(props)  {
 
        <Breadcrumb>
   <Breadcrumb.Item active>Home</Breadcrumb.Item>
-  <Breadcrumb.Item href="/login">
-    Login
-  </Breadcrumb.Item>
-  <Breadcrumb.Item href='/register'>Register</Breadcrumb.Item>
 </Breadcrumb>
 
 
@@ -30,8 +26,8 @@ function IndexComponents(props)  {
                  alt="First slide"
              />
         <Carousel.Caption>
-                 <h3>blabla</h3>
-                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                 <h3>Take into account your work</h3>
+                 <p>With this app keep an order of your work times</p>
         </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -42,8 +38,8 @@ function IndexComponents(props)  {
         />
 
         <Carousel.Caption>
-                  <h3>blabla </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h3>Don't waste a minute </h3>
+                  <p>Manage your schedule without worries</p>
         </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -54,8 +50,8 @@ function IndexComponents(props)  {
         />
 
         <Carousel.Caption>
-                   <h3>blablabla</h3>
-                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                   <h3>take control of your work</h3>
+                   <p>Work hand in hand with your bosses</p>
         </Carousel.Caption>
         </Carousel.Item>
         </Carousel>
@@ -70,10 +66,9 @@ function IndexComponents(props)  {
         <Card>
         <Card.Img variant="top" src="img/Card1.jpg" />
         <Card.Body>
-        <Card.Title>Card title</Card.Title>
+        <Card.Title>Projects</Card.Title>
         <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
+                be clear about the working hours and schedules you handle, keep in mind that your projects are very important to us.
         </Card.Text>
          </Card.Body>
        <Card.Footer>
@@ -83,10 +78,9 @@ function IndexComponents(props)  {
       <Card>
              <Card.Img variant="top" src="img/Card2.jpg" />
       <Card.Body>
-             <Card.Title>Card title</Card.Title>
+             <Card.Title>Works</Card.Title>
       <Card.Text>
-              This card has supporting text below as a natural lead-in to additional
-              content.{' '}
+          fight for your dreams and with these tools work hard to make them come true{' '}
       </Card.Text>
         </Card.Body>
           <Card.Footer>
@@ -96,11 +90,9 @@ function IndexComponents(props)  {
   <Card>
         <Card.Img variant="top" src="img/Card3.jpg" />
         <Card.Body>
-        <Card.Title>Card title</Card.Title>
+        <Card.Title>Analyze</Card.Title>
         <Card.Text>
-           This is a wider card with supporting text below as a natural lead-in to
-           additional content. This card has even longer content than the first to
-           show that equal height action.
+        the best of you is what we hope for that is why we help you to organize your schedules.
          </Card.Text>
        </Card.Body>
        <Card.Footer>

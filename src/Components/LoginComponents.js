@@ -25,7 +25,6 @@ function LoginComponents(props)  {
      <Breadcrumb.Item active>
        Login
      </Breadcrumb.Item>
-     <Breadcrumb.Item href='/register'>Register</Breadcrumb.Item>
    </Breadcrumb>
 
           <br />

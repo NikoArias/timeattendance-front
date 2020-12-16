@@ -6,6 +6,9 @@ import UserNavbar from './UserNavbar';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Breadcrumb from "react-bootstrap/Breadcrumb";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 function DashboardComponents (props){
   return(
@@ -13,51 +16,52 @@ function DashboardComponents (props){
 
     <UserNavbar/>
 
-              <Breadcrumb>
+         <Breadcrumb>
          <Breadcrumb.Item active>Dashboard</Breadcrumb.Item>
-         <Breadcrumb.Item href='/addtime'> AddTime</Breadcrumb.Item>
-         <Breadcrumb.Item href='history'>History</Breadcrumb.Item>
-       </Breadcrumb>
+         </Breadcrumb>
+
+           <Container>
+
+       <br />
+       <br />
+       <br />
+       <br />
 
 
 
-
-
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <Card className="text-center">
-  <Card.Header>AddTime</Card.Header>
+    <Row>
+      <Col>
+        </Col>
+    <Col>
+    <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="img/DashLogo1.png" />
   <Card.Body>
-    <Card.Title>Add time of work.</Card.Title>
+    <Card.Title>Addtime</Card.Title>
     <Card.Text>
-    To schedule your arrival and departure time press the link below.
+     Helping is our priority, to add your arrival and departure time click here.
     </Card.Text>
-    <Button variant="primary" href='/addtime'>Click Here</Button>
+    <Button variant="primary" href='addtime'>AddTime</Button>
   </Card.Body>
-  <Card.Footer className="text-muted">TimeAttendance App</Card.Footer>
 </Card>
-
-
-<br />
-<br />
-<br />
-<br />
-
-<Card className="text-center">
-<Card.Header>History</Card.Header>
-<Card.Body>
-<Card.Title>See your History</Card.Title>
-<Card.Text>
-  To see your working hours and scheduled schedules enter the link below.
-</Card.Text>
-<Button variant="primary" href='./history'>Click Here</Button>
-</Card.Body>
-<Card.Footer className="text-muted">TimeAttendance App</Card.Footer>
+    </Col>
+      <Col>
+        </Col>
+    <Col>
+    <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="img/DashLogo2.png" />
+  <Card.Body>
+    <Card.Title>History</Card.Title>
+    <Card.Text>
+     Your comfort is our priority, to see all your records and carry out your accounts, click here.
+    </Card.Text>
+    <Button variant="primary"href='/History'>History</Button>
+  </Card.Body>
 </Card>
-
+    </Col>
+      <Col>
+        </Col>
+    </Row>
+   </Container>
     </>
 
   )
